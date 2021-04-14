@@ -5,7 +5,7 @@ const list = document.querySelector('.todos li');
 
 let listLenght = list.lenght;
 
-const generateTempalate = (todo) => {
+const generateTemplate = (todo) => {
     const html = `
         <li>
             <input type="checkbox" id="todo_${listLenght}">
@@ -16,5 +16,7 @@ const generateTempalate = (todo) => {
             <i class="far fa-trash-alt delete"></i>
         </li>
     `
+
+    todoList.innerHTML += html;
 };
 
