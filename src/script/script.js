@@ -20,3 +20,18 @@ const generateTemplate = (todo) => {
     todoList.innerHTML += html;
 };
 
+function addTodos(e) {
+    e.preventDefault();
+    const todo = submitForm.add.value.trim();
+
+    if(todo.lenght) {
+        listLenght = listLenght + 1;
+        generateTemplate(todo);
+        submitForm.reset();
+    }
+}
+
+submitForm.addEventListener('submit', addTodos);
+addTodos.addEventListener('click', addTodos);
+
+
