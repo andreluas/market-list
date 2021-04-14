@@ -1,10 +1,11 @@
 const subimitForm = document.querySelector('.add');
 const addButton = document.querySelector('.add-todo');
 const todoList = document.querySelector('.todos');
-const list = document.querySelector('.todos li');
+const list = document.querySelectorAll('.todos li');
 
 let listLenght = list.lenght;
 
+// GENERATE TODO
 const generateTemplate = (todo) => {
     const html = `
         <li>
@@ -20,6 +21,7 @@ const generateTemplate = (todo) => {
     todoList.innerHTML += html;
 };
 
+// ADD FUNCTION
 function addTodos(e) {
     e.preventDefault();
     const todo = submitForm.add.value.trim();
@@ -34,4 +36,11 @@ function addTodos(e) {
 submitForm.addEventListener('submit', addTodos);
 addTodos.addEventListener('click', addTodos);
 
+// DELETE FUNCTION
+function deleteTodos(e) {
+    if(e.target.classList.contains('delete')){
+        e.target.parentElement.remove();
+    }
+}
 
+todoList.addEventListener('click', deleteTodos);
