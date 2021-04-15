@@ -10,8 +10,28 @@
     <link rel="shortcut icon" href="assets/favicon/market.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/styles/style.css">
     <title>MARKET LIST</title>
+    <!-- META PWA -->
+    <meta name="theme-color" content="#f2606f">
+    <link rel="apple-touch-icon" href="/assets/favicon/market.ico">
+    <link rel="manifest" href="manifest.json">
+    <link rel="canonical" href="https://market-list-todo.web.app/">
+    <!-- END -->
 </head>
 <body>
+    <!-- SCRIPT PWA -->
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(function(){
+                    console.log('service worker registered');
+                })
+                .catch(function(){
+                    console.log('service worker failed');
+                });
+        } 
+        </script>
+    <!-- END -->
+    
     <div class="todoList">
         <div class="cover-img">
             <div class="cover-inner">

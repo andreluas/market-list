@@ -64,10 +64,3 @@ node_modules/
 
 # dotenv environment variables file
 .env
-
-# Ignore public and Firebase serv (just for now)
-.firebaserc
-public/
-firebase.json
-sw.js
-manifest.json
