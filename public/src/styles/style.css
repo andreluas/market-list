@@ -101,6 +101,10 @@ button, input, select, textarea {
     color: #8e979c;
 }
 
+.btn-div {
+    
+}
+
 .clearAll {
     border: none;
     text-transform: lowercase;
@@ -112,7 +116,17 @@ button, input, select, textarea {
     border-radius: 0 0 10px 10px;
     background-color: #fff;
     border-top: 1px solid #2c2c2cb7;
+    box-shadow: 0 7px 30px rgba(62, 9, 11, 0.151);
     cursor: pointer;
+}
+
+.clearAll i {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.clearAll:hover {
+    color: #f2606f;
 }
 
 .content ul.todos {
