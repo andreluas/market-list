@@ -10,8 +10,28 @@
     <link rel="shortcut icon" href="assets/favicon/market.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/styles/style.css">
     <title>MARKET LIST</title>
+    <!-- META HEAD PWA -->
+    <meta name="theme-color" content="">
+    <link rel="apple-touch-icon" href="">
+    <link rel="manifest" href="">
+    <link rel="canonical" href="https://andreluas.github.io/market-list/">
+    <!-- END -->
 </head>
 <body>
+    <!-- PWA SCRIPT -->
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(function(){
+                    console.log('service worker registered');
+                })
+                .catch(function(){
+                    console.log('service worker failed');
+                });
+        }
+    </script>
+    <!-- END -->
+
     <div class="todoList">
         <div class="cover-img">
             <div class="cover-inner">
