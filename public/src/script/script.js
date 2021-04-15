@@ -2,8 +2,9 @@ const submitForm = document.querySelector('.add');
 const addButton = document.querySelector('.add-todo');
 const todoList = document.querySelector('.todos');
 const list = document.querySelectorAll('.todos li');
+const clear = document.querySelector('.clearAll');
 
-let listLength = list.length; // NaN
+let listLength = list.length;
 
 // GENERATE TODO
 const generateTodo = (todo) => {
@@ -41,3 +42,10 @@ function deleteTodos(e) {
 }
 
 todoList.addEventListener('click', deleteTodos);
+
+// CLEAR ALL TODOS FUNCTION
+function clearUp() {
+    todoList.innerHTML="";
+}
+
+clear.addEventListener('click', clearUp);
