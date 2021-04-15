@@ -1,0 +1,9 @@
+{
+    "name": "Market List",
+    "short_name": "Market List",
+    "theme_color": "#f2606f",
+    "background_color": "#f39264",
+    "display": "standalone",
+    "scope": "/index.html",
+    "start_url": "/"
+  }
