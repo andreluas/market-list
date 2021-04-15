@@ -2,15 +2,14 @@ const submitForm = document.querySelector('.add');
 const addButton = document.querySelector('.add-todo');
 const todoList = document.querySelector('.todos');
 const list = document.querySelectorAll('.todos li');
-const clearAll = document.querySelector('.clearAll');
 
-let listLenght = list.lenght;
+let listLength = list.length; // NaN
 
 // GENERATE TODO
 const generateTodo = (todo) => {
     const html = `<li>
-                    <input type="checkbox" id="todo_${listLenght}">
-                    <label for="todo_${listLenght}">
+                    <input type="checkbox" id="todo_${listLength}">
+                    <label for="todo_${listLength}">
                     <span class="check"></span>
                     ${todo}
                     </label>
@@ -25,7 +24,7 @@ function addTodos(e) {
     const todo = submitForm.add.value.trim();
 
     if(todo.length) {
-        listLenght = listLenght + 1;
+        listLength = listLength + 1;
         generateTodo(todo);
         submitForm.reset();
     }
@@ -42,5 +41,3 @@ function deleteTodos(e) {
 }
 
 todoList.addEventListener('click', deleteTodos);
-
-// CLEAR ALL FUNCTION
