@@ -69,3 +69,5 @@ node_modules/
 .firebaserc
 public/
 firebase.json
+sw.js
+manifest.json
