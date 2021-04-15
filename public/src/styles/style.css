@@ -101,6 +101,20 @@ button, input, select, textarea {
     color: #8e979c;
 }
 
+.clearAll {
+    border: none;
+    text-transform: lowercase;
+    font-weight: 800;
+    font-size: 18px;
+    width: 320px;
+    height: 40px;
+    padding: 2%;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    border-top: 1px solid #2c2c2cb7;
+    cursor: pointer;
+}
+
 .content ul.todos {
     margin-left: 0;
     padding: 0;
