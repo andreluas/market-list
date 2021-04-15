@@ -2,6 +2,7 @@ const submitForm = document.querySelector('.add');
 const addButton = document.querySelector('.add-todo');
 const todoList = document.querySelector('.todos');
 const list = document.querySelectorAll('.todos li');
+const clearAll = document.querySelector('.clearAll');
 
 let listLenght = list.lenght;
 
@@ -35,9 +36,11 @@ addButton.addEventListener('click', addTodos);
 
 // REMOVE TODOS FUNCTION
 function deleteTodos(e) {
-    if(e.target.classList.contains('delete')){
+    if(e.target.classList.contains('delete')) {
         e.target.parentElement.remove();
     }
 }
 
 todoList.addEventListener('click', deleteTodos);
+
+// CLEAR ALL FUNCTION
