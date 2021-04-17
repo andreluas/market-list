@@ -3,6 +3,7 @@ const addButton = document.querySelector('.add-todo');
 const todoList = document.querySelector('.todos');
 const list = document.querySelectorAll('.todos li');
 const clear = document.querySelector('.clearAll');
+const btnModal = document.getElementById('#modal');
 
 let listLength = list.length;
 
@@ -49,3 +50,18 @@ function clearUp() {
 }
 
 clear.addEventListener('click', clearUp);
+
+// ***************
+// MODAL CALC
+// ***************
+
+// hide function
+function modalOnOff() {
+    btnModal
+        .classList
+        .toggle("hide")   
+        
+    todoList
+        .classList
+        .toggle("hide")
+}
