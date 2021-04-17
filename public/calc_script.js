@@ -117,11 +117,29 @@ window.addEventListener('keydown', (e) => {
         e.key === '.'  
     ){
         clickButtonEl(e.key);
+    } else if (
+        e.key === '*' ||
+        e.key === '+' ||
+        e.key === '-' ||
+        e.key === '%' ||
+        e.key === '/' 
+    ){
+        clickOperation(e.key);
     }
 });
 
+// keypress number function
 function clickButtonEl(key) {
     numbersEl.forEach(button => {
+        if(button.innerText === key) {
+            button.click();
+        }
+    })
+}
+
+// keypress operation function
+function clickOperation(key) {
+    operationEl.forEach(button => {
         if(button.innerText === key) {
             button.click();
         }
