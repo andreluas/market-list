@@ -31,7 +31,6 @@
         } 
         </script>
     <!-- END -->
-    
     <div class="todoList">
         <div class="cover-img">
             <div class="cover-inner">
@@ -57,8 +56,47 @@
                 Clear all
             <i class="fas fa-trash"></i>
             </button>
+
+            <div class="modalButton" onclick="modalOnOff()">
+                <button>MODAL</button>
+            </div>
         </div>
     </div>
+
+    <!-- MODAL CALC -->
+    <section id="#modal" class="hide">
+        <!-- CONTAINER -->
+        <div class="container">
+        <!-- DISPLAYS -->
+            <div class="display">
+                <div class="display-1">0</div>
+                <div class="display-2">0</div>
+                <div class="temp-result">0</div>
+            </div>
+        <!-- BUTTONS -->
+            <div class="all-buttons">
+                <div class="button all-clear">C</div>
+                <div class="button last-entity-clear">CE</div>
+                <div class="button operation">%</div>
+                <div class="button operation">/</div>
+                <div class="button number">7</div>
+                <div class="button number">8</div>
+                <div class="button number">9</div>
+                <div class="button operation">X</div>
+                <div class="button number">4</div>
+                <div class="button number">5</div>
+                <div class="button number">6</div>
+                <div class="button operation">-</div>
+                <div class="button number">1</div>
+                <div class="button number">2</div>
+                <div class="button number">3</div>
+                <div class="button operation">+</div>
+                <div class="button number btn-0">0</div>
+                <div class="button number dot">.</div>
+                <div class="button equal">=</div>
+            </div>
+        </div>
+    </section>
     <script src="src/script/script.js"></script>
 </body>
 </html>
