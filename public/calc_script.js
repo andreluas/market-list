@@ -118,13 +118,14 @@ window.addEventListener('keydown', (e) => {
     ){
         clickButtonEl(e.key);
     } else if (
-        e.key === '*' ||
         e.key === '+' ||
         e.key === '-' ||
         e.key === '%' ||
         e.key === '/' 
     ){
         clickOperation(e.key);
+    } else if(e.key === '*') { // * is different of X so make de function
+        clickOperation('X')
     }
 });
 
