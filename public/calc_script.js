@@ -27,8 +27,10 @@ numbersEl.forEach(number => {
     })
 });
 
+// numbersEl for operations
 operationEl.forEach(operation => {
     operation.addEventListener('click', (e) => {
+        // !dis2Num and Dot
         if(!dis2Num) return;
         haveDot = false;
         
@@ -41,13 +43,31 @@ operationEl.forEach(operation => {
         }
 
         clearVar(operationName);
+        lastOperation = operationName;
         console.log(result);
     })
 });
 
+// clearVar function
 function clearVar(name = '') {
     dis1Num += dis2Num + ' ' + name + ' ';
     display1El.innerText = dis1Num;
     display2El.innerText = '';
     dis2Num = '';
+    tempResultEl.innerText = result;
+}
+
+// mathOp function
+function mathOperation() {
+    if(lastOperation === 'X') {
+        result = parseFloat(result) * parseFloat(dis2Num);
+    } else if(lastOperation === '+') {
+        result = parseFloat(result) + parseFloat(dis2Num);
+    } else if(lastOperation === '-') {
+        result = parseFloat(result) - parseFloat(dis2Num);
+    } else if(lastOperation === '/') {
+        result = parseFloat(result) / parseFloat(dis2Num);
+    } else if(lastOperation === '%') {
+        result = parseFloat(result) % parseFloat(dis2Num);
+    }
 }
