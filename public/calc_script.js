@@ -25,4 +25,22 @@ numbersEl.forEach(number => {
         dis2Num += e.target.innerText;
         display2El.innerText = dis2Num;
     })
-})
+});
+
+operationEl.forEach(operation => {
+    operation.addEventListener('click', (e) => {
+        if(!dis2Num) return;
+        haveDot = false;
+        
+        const operationName = e.target.innerText;
+        
+        if(dis1Num && dis2Num && lastOperation) {
+        mathOperation();
+        } else {
+            result = parseFloat(dis2Num);
+        }
+
+        clearVar(operationName);
+        console.log(result);
+    })
+});
