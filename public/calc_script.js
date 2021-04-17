@@ -124,8 +124,10 @@ window.addEventListener('keydown', (e) => {
         e.key === '/' 
     ){
         clickOperation(e.key);
-    } else if(e.key === '*') { // * is different of X so make de function
+    } else if(e.key === '*') { // * is different of X so make an else
         clickOperation('X')
+    } else if(e.key == 'Enter' || e.key === "=") {
+        clickEqual();
     }
 });
 
@@ -145,4 +147,9 @@ function clickOperation(key) {
             button.click();
         }
     })
+}
+
+// keypress equal function
+function clickEqual() {
+    equalEl.click();
 }
