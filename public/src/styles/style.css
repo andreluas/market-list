@@ -25,7 +25,7 @@ button, input, select, textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 360px;
-    height: 500px;
+    height: 550px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
@@ -103,7 +103,7 @@ button, input, select, textarea {
 
 .btn-div {
     position: relative;
-    top: 5px;
+    top: 25px;
     display: flex;
     justify-content: space-around;
     align-items: center;    
@@ -123,6 +123,7 @@ button, input, select, textarea {
     font-size: 30px;
     color: #3f3f3fa6;
     cursor: pointer;
+    background-color: transparent;
 } 
 
 .clearAll i {
@@ -245,9 +246,9 @@ button, input, select, textarea {
 section {
     position: absolute;
     top: 43%;
-    left: 49.5%;
-    transform: translate(-43%, -49.5%);
-    width: 360px;
+    left: 48.5%;
+    transform: translate(-43%, -48.5%);
+    width: 410px;
     height: 500px;
 }
 
@@ -272,7 +273,7 @@ section {
 .display-1 {
     opacity: .4;
     font-size: 20px;
-    height: 20px;
+    height: 25px;
     margin-bottom: 10px;
     overflow: hidden;
 }
