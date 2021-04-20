@@ -103,30 +103,33 @@ button, input, select, textarea {
 
 .btn-div {
     color: none;
-}
-
-.clearAll {
-    border: none;
-    text-transform: lowercase;
-    font-weight: 800;
-    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 320px;
     height: 40px;
     padding: 2%;
     border-radius: 0 0 10px 10px;
     background-color: #fff;
-    color: #3f3f3f;
     border-top: 1px solid #2c2c2cb7;
-    box-shadow: 0 7px 30px rgba(62, 9, 11, 0.151);
-    cursor: pointer;
+    box-shadow: 0 7px 30px rgba(62, 9, 11, 0.151); 
 }
+
+ .clearAll, .btnCalc {
+    border: none;
+    text-transform: lowercase;
+    font-weight: 800;
+    font-size: 18px;
+    color: #3f3f3f;
+    cursor: pointer;
+} 
 
 .clearAll i {
     font-size: 18px;
     margin-left: 10px;
 }
 
-.clearAll:hover {
+.clearAll:hover, .btnCalc:hover {
     color: #f2606f;
 }
 
@@ -237,7 +240,6 @@ button, input, select, textarea {
 /* MODAL CALC */
 .hide {
     display: none;
-    z-index: 1;
 }
 
 section {
@@ -247,6 +249,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .container {
