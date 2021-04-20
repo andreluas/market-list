@@ -24,8 +24,8 @@ button, input, select, textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
-    height: 600px;
+    width: 360px;
+    height: 500px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
@@ -103,12 +103,12 @@ button, input, select, textarea {
 
 .btn-div {
     position: relative;
-    top: 58px;
+    top: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;    
-    width: 400px;
-    height: 60px;
+    width: 360px;
+    height: 50px;
     padding: 2%;
     color: none;
     border-radius: 0 0 10px 10px;
@@ -243,17 +243,12 @@ button, input, select, textarea {
 }
 
 section {
-    background-color: rgb(18, 26, 31);
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: absolute;
+    top: 43%;
+    left: 49.5%;
+    transform: translate(-43%, -49.5%);
+    width: 360px;
+    height: 500px;
 }
 
 .container {
@@ -278,6 +273,7 @@ section {
     opacity: .4;
     font-size: 20px;
     height: 20px;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 
@@ -286,6 +282,7 @@ section {
     bottom: 0;
     left: 10;
     font-size: 20px;
+    margin: 10px 0;
     opacity: .4;
 }
 
@@ -315,11 +312,7 @@ section {
 }
 
 .x-button {
-    position: relative;
-    top: -280px;
-    left: -50px;
-    
-    font-size: 50px;
+    position: absolute;
     cursor: pointer;
-    
+    z-index: 1;
 }
