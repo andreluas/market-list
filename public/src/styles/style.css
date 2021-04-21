@@ -24,7 +24,7 @@ button, input, select, textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 360px;
+    width: 300px;
     height: 550px;
     background: #fff;
     border-radius: 10px;
@@ -107,7 +107,7 @@ button, input, select, textarea {
     display: flex;
     justify-content: space-around;
     align-items: center;    
-    width: 360px;
+    width: 300px;
     height: 50px;
     padding: 2%;
     color: none;
@@ -244,12 +244,15 @@ button, input, select, textarea {
 }
 
 section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 43%;
-    left: 48.5%;
-    transform: translate(-43%, -48.5%);
-    width: 410px;
-    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 90%;
+    min-height: 90%;
 }
 
 .container {
