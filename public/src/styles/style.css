@@ -319,12 +319,12 @@ section {
     z-index: 1;
 }
 
-/* VALOR TESTE */
+/* PRICE STYLE */
 .price {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: rgb(248, 31, 49);
     margin: 4%;
@@ -332,4 +332,10 @@ section {
 
 .price-icon {
     display: flex;
+}
+
+.p-price {
+    position: relative;
+    left: 5px;
+    bottom: 3px;
 }
