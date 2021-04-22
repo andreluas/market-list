@@ -324,8 +324,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(31, 248, 60);
-    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(248, 31, 49);
+    margin: 4%;
 }
 
 .price-icon {

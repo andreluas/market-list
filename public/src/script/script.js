@@ -14,6 +14,8 @@ const operationEl = document.querySelectorAll('.operation');
 const equalEl = document.querySelector('.equal');
 const clearAllEl = document.querySelector('.all-clear');
 const clearLastEl = document.querySelector('.last-entity-clear');
+// PRICE DIV
+const priceDiv = document.querySelector('.p-price')
 
 let listLength = list.length;
 
@@ -150,6 +152,7 @@ equalEl.addEventListener('click', (e) => {
     clearVar();
     display2El.innerText = result;
     tempResultEl.innerText = '';
+    priceDiv.innerText = result;
     dis2Num = result;
     dis1Num = '';
 });
@@ -163,6 +166,7 @@ clearAllEl.addEventListener('click', (e) => {
     dis2Num = '';
     result = '';
     tempResultEl.innerText = '0';
+    priceDiv.innerText = '0.00';
 });
 
 // CE element - last clear
