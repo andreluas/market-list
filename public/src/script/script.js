@@ -17,6 +17,7 @@ const clearAllEl = document.querySelector('.all-clear');
 const clearLastEl = document.querySelector('.last-entity-clear');
 
 let listLength = list.length;
+var teste = "0.00"
 
 // GENERATE TODO
 const generateTodo = (todo) => {
