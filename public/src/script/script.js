@@ -5,6 +5,7 @@ const todoList = document.querySelector('.todos');
 const list = document.querySelectorAll('.todos li');
 const clear = document.querySelector('.clearAll');
 const btnModal = document.getElementById('#modal');
+const priceDiv = document.querySelector('.p-price')
 // CALC
 const display1El = document.querySelector('.display-1');
 const display2El = document.querySelector('.display-2');
@@ -14,8 +15,6 @@ const operationEl = document.querySelectorAll('.operation');
 const equalEl = document.querySelector('.equal');
 const clearAllEl = document.querySelector('.all-clear');
 const clearLastEl = document.querySelector('.last-entity-clear');
-// PRICE DIV
-const priceDiv = document.querySelector('.p-price')
 
 let listLength = list.length;
 
