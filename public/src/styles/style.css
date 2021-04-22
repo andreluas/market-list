@@ -24,8 +24,10 @@ button, input, select, textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
-    height: 550px;
+    width: 90%;
+    max-width: 400px;
+    /* width: 300px; */
+    /* height: 550px; */
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
@@ -99,21 +101,19 @@ button, input, select, textarea {
     margin-top: 5px;
     font-size: 20px;
     color: #8e979c;
+    /* margin-left: -150%; correção para android Fireapp */
+    position: relative;
+    left: -8px;
 }
 
 .btn-div {
-    position: relative;
-    top: 25px;
     display: flex;
     justify-content: space-around;
     align-items: center;    
-    width: 300px;
-    height: 50px;
+    height: 60px;
     padding: 2%;
     color: none;
-    border-radius: 0 0 10px 10px;
-    background-color: #fff;
-    border-top: 1px solid #2c2c2cb7;
+    border-top: 1px solid #2c2c2c1f;
 }
 
  .clearAll, .btnCalc {
