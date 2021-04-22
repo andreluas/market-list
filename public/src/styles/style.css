@@ -318,3 +318,16 @@ section {
     cursor: pointer;
     z-index: 1;
 }
+
+/* VALOR TESTE */
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(31, 248, 60);
+    margin-top: 10px;
+}
+
+.price-icon {
+    display: flex;
+}
