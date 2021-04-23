@@ -227,5 +227,3 @@ function clickOperation(key) {
 function clickEqual() {
     equalEl.click();
 }
-
-// BD  
