@@ -127,7 +127,7 @@ button, input, select, textarea {
 }
 
 .clearAll:hover, .btnCalc:hover {
-    color: #f2606f;
+    color: #e94545;
 }
 
 .content ul.todos {
@@ -254,13 +254,13 @@ section {
 .container {
     width: 90%;
     max-width: 400px;
-    background-color: #f39264;
+    background-color: #cfcfcf;
     border-radius: 8px;
     overflow: hidden;
 }
 
 .display {
-    background-color: #f39264;
+    background-color: #cfcfcf;
     height: 100px;
     width: 100%;
     text-align: right;
@@ -287,13 +287,13 @@ section {
 }
 
 .all-buttons {
-    color: whitesmoke;
+    color: rgb(37, 37, 37);
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
 }
 
 .button {
-    border: .5px solid #f2606f36;
+    border: .5px solid rgba(255, 255, 255, 0.103);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,7 +304,7 @@ section {
 }
 
 .button:hover {
-    background-color: #ff864e;
+    background-color: #a5a5a5;
 }
 
 .btn-0 {
