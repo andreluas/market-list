@@ -10,6 +10,8 @@ firebase-debug.*.log*
 # Firebase cache
 .firebase/
 firebase.json
+/public/sw.js 
+/public/manifest
 
 # Firebase config
 
