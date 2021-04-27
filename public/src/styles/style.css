@@ -28,7 +28,6 @@ button, input, select, textarea {
     max-width: 400px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
 }
 
 .cover-img .cover-inner {
@@ -99,7 +98,6 @@ button, input, select, textarea {
     margin-top: 5px;
     font-size: 20px;
     color: #8e979c;
-    /* margin-left: -150%; correção para android Fireapp */
     position: relative;
     left: -8px;
 }
@@ -256,13 +254,13 @@ section {
 .container {
     width: 90%;
     max-width: 400px;
-    background-color: rgb(39, 55, 59);
+    background-color: #f39264;
     border-radius: 8px;
     overflow: hidden;
 }
 
 .display {
-    background-color: rgb(182, 182, 182);
+    background-color: #f39264;
     height: 100px;
     width: 100%;
     text-align: right;
@@ -295,7 +293,7 @@ section {
 }
 
 .button {
-    border: .5px solid rgba(92, 92, 92, 0.137);
+    border: .5px solid #f2606f36;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -306,7 +304,7 @@ section {
 }
 
 .button:hover {
-    background-color: rgb(30, 43, 46);
+    background-color: #ff864e;
 }
 
 .btn-0 {
@@ -326,7 +324,7 @@ section {
     align-items: center;
     font-size: 20px;
     font-weight: 600;
-    color: rgb(248, 31, 49);
+    color: rgba(248, 31, 49, 0.836);
     margin: 4%;
 }
 
