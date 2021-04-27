@@ -59,6 +59,13 @@ todoList.addEventListener('click', deleteTodos);
 // CLEAR ALL TODOS FUNCTION
 function clearUp() {
     todoList.innerHTML="";
+    display1El.innerHTML = '0';
+    display2El.innerHTML = '0';
+    dis1Num = '';
+    dis2Num = '';
+    result = '';
+    tempResultEl.innerText = '0';
+    priceDiv.innerText = '0.00';
 }
 
 clear.addEventListener('click', clearUp);
@@ -227,5 +234,3 @@ function clickOperation(key) {
 function clickEqual() {
     equalEl.click();
 }
-
-// BD TEST
