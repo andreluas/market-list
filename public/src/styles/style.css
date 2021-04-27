@@ -127,7 +127,7 @@ button, input, select, textarea {
 }
 
 .clearAll:hover, .btnCalc:hover {
-    color: #e94545;
+    color: #f2606f;
 }
 
 .content ul.todos {
